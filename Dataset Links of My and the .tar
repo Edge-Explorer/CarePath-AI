@@ -1,3 +1,49 @@
 'Kaggle':-https://www.kaggle.com/datasets/karanshelar6/carepath-ai
 'Google Drive':-https://drive.google.com/drive/folders/1nGa5v8Zp69i_gQc3vzMtXTvOYMYeVw0j?usp=drive_link
 'Google Drive':-https://drive.google.com/file/d/16T6WDy2hQNH7JPzVJ3OeArgoiGEJZ1qD/view?usp=drive_link
+
+🐳 Docker Commands
+
+To save your Docker image locally (from your machine):
+
+docker save -o carepath-ai.tar carepath-ai:latest
+
+
+To load the Docker image on another machine:
+
+docker load -i carepath-ai.tar
+
+
+✅ The docker load command only loads the image. To run the container:
+
+docker run -it --rm carepath-ai:latest
+
+
+⚠️ Make sure Docker is installed on the host machine before running these commands.
+
+⚡ Important Notes About Reasoning
+
+The CarePath-AI system consists of two main components:
+
+Random Forest (RF) model (model.pkl) – Provides confidence scores based on patient features.
+
+Ollama LLM for RAG – Provides reasoning and detailed explanations.
+
+If Ollama is not running on the host machine, the container will still provide the RF confidence score, but the reasoning section will not appear.
+
+To enable full reasoning, make sure Ollama is installed and the required models are pulled:
+
+ollama pull llama3
+ollama pull mistral
+
+📝 Summary
+
+Download the dataset from Kaggle or Google Drive.
+
+Load the Docker image using docker load -i carepath-ai.tar.
+
+Run the container with docker run -it --rm carepath-ai:latest.
+
+Ensure Ollama is running to get both confidence and reasoning.
+
+Without Ollama, you will still get confidence scores from the RF model.
