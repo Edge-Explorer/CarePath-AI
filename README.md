@@ -28,6 +28,18 @@ Layer           | Tools/Frameworks
 🖥️ Frontend     | Streamlit
 🐳 Deployment   | Docker container  
 
+### 📸 Screenshots of CarePath-AI
+
+1. **Main Dashboard**  
+![Dashboard](Carepathai1.png)
+
+2. **Prediction, Confidence Output & Reasoning**  
+![Patient Input](Carepathai2.png)
+
+3. **Database Entries**  
+![Reasoning Output](Carepath3.png)
+
+
 💡 How It Works (Workflow)
 ```text
 User Input (Age, Symptoms, Vitals)
