@@ -21,9 +21,9 @@ CarePath AI is a full-stack AI tool that:
 ⚙️ Tech Stack
 Layer           | Tools/Frameworks
 ----------------|----------------
-🔗 Backend       | Python, Pandas, scikit-learn, LangChain, FAISS
+🔗 Backend       | Python, Pandas, scikit-learn, LangChain, FAISS, Lang graph
 🧠 ML Models     | Random Forest, other supervised ML models
-🧠 LLM          | Ollama (llama3, mistral) / OpenAI / Gemini
+🧠 LLM          | Ollama (llama3, mistral) 
 🗄️ Database     | SQLite (patient.db)
 🖥️ Frontend     | Streamlit
 🐳 Deployment   | Docker container  
